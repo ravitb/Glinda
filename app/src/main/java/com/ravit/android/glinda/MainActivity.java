@@ -17,7 +17,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-//	private GoogleAPIClient mGoogleApiClient;
+
 	private GlindaReceiver mGlindaReceiver;
 
     @Override
