@@ -13,6 +13,7 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
+//	private GoogleAPIClient mGoogleApiClient;
 	private GlindaReceiver mGlindaReceiver;
 
     @Override
@@ -24,12 +25,20 @@ public class MainActivity extends AppCompatActivity {
 
        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+			@Override
+			public void onClick(View view) {
+				Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+						.setAction("Action", null).show();
+			}
+		});
+/*
+		if (mGoogleApiClient == null) {
+			mGoogleApiClient = new GoogleApiClient.Builder(this)
+					.addConnectionCallbacks(this)
+					.addOnConnectionFailedListener(this)
+					.addApi(LocationServices.API)
+					.build();
+		}*/
 
 		IntentFilter filter = new IntentFilter(Intent.ACTION_SCREEN_ON);
 		filter.addAction(Intent.ACTION_SCREEN_OFF);
