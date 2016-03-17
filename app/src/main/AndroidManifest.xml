@@ -33,7 +33,6 @@
         </activity>
 
         <receiver android:name="GlindaReceiver"></receiver>
-        <service android:name=".GBackgroundLocationService" />
         <service android:name=".LocationService" />
     </application>
 
