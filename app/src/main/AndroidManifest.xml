@@ -32,8 +32,9 @@
                 android:value="com.ravit.android.glinda.MainActivity" />
         </activity>
 
-        <receiver android:name="GlindaReceiver">
-        </receiver>
+        <receiver android:name="GlindaReceiver"></receiver>
+        <service android:name=".GBackgroundLocationService" />
+        <service android:name=".LocationService" />
     </application>
 
 </manifest>
